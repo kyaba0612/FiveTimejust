@@ -19,10 +19,26 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //結果表示
         resultLabel.text = String(format: "%.2f",timer)
-        
-
+        //星の数
+        if timer == 5.00 {
+            starImage1.image = UIImage(named: "color_star.png")
+            starImage2.image = UIImage(named: "color_star.png")
+            starImage3.image = UIImage(named: "color_star.png")
+        } else if  timer >= 4.75 && timer <= 5.25 {
+            starImage1.image = UIImage(named: "color_star.png")
+            starImage2.image = UIImage(named: "color_star.png")
+            starImage3.image = UIImage(named: "outline_star.png")
+        } else if  timer >= 4.50 && timer <= 5.50 {
+            starImage1.image = UIImage(named: "color_star.png")
+            starImage2.image = UIImage(named: "outline_star.png")
+            starImage3.image = UIImage(named: "outline_star.png")
+        } else {
+            starImage1.image = UIImage(named: "outline_star.png")
+            starImage2.image = UIImage(named: "outline_star.png")
+            starImage3.image = UIImage(named: "outline_star.png")
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -31,7 +47,8 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func back() {
-        
+        self.presentingViewController?.presentingViewController?
+            .dismiss(animated: true, completion: nil)
     }
     
 
