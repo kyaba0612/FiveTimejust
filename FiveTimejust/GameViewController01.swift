@@ -42,11 +42,18 @@ class GameViewController01: UIViewController {
         if !timer.isValid {
             timer = Timer.scheduledTimer(timeInterval: 0.01,
                                          target: self,
-                                         selector: #selector(self.down),
+                                         selector: #selector(self.up),
                                          userInfo: nil,
                                          repeats: true
             )
         }
+        
+        //タイマーが一定時間立つとリザルト
+        if count >= 6.00 {
+            performSegueToResult()
+            
+        }
+        
         //choiceStageを実行
         choiceStage()
         
@@ -94,8 +101,8 @@ class GameViewController01: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @objc func down() {
-        count = count - 0.01
+    @objc func up() {
+        count = count + 0.01
     }
 
     
