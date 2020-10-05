@@ -36,27 +36,35 @@ class GameViewController01: UIViewController {
         stageArray.append(["問題","選択肢1","選択肢2","選択肢3",2])
         stageArray.append(["問題","選択肢1","選択肢2","選択肢3",2])
         
-        //セレクト画面で選択したステージを読んでくる
-        
         //タイマー動かす
         if !timer.isValid {
             timer = Timer.scheduledTimer(timeInterval: 0.01,
                                          target: self,
-                                         selector: #selector(self.up),
+                                         selector: #selector(self.timecount),
                                          userInfo: nil,
                                          repeats: true
             )
         }
+        
+        //セレクト画面で選択したステージを読んでくる
+        
+        //タイマー起動
+        timecount()
+        
+        //choiceStageを実行
+        choiceStage()
+        
+    }
+    
+    @objc func timecount() {
+        
+        count = count + 0.01
         
         //タイマーが一定時間立つとリザルト
         if count >= 6.00 {
             performSegueToResult()
             
         }
-        
-        //choiceStageを実行
-        choiceStage()
-        
     }
     
     func choiceStage() {
@@ -101,10 +109,7 @@ class GameViewController01: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @objc func up() {
-        count = count + 0.01
-    }
-
+ 
     
 
 
