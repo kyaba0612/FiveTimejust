@@ -59,7 +59,7 @@ class ResultViewController: UIViewController {
         self.presentingViewController?.presentingViewController?
             .dismiss(animated: true, completion: nil)
         
-        saveData.set(starcount, forkey: "starcount")
+        saveData.set(starcount, forKey: "starcount")
 
     }
     

@@ -10,6 +10,8 @@ import UIKit
 
 class GameViewController01: UIViewController {
     
+    var outputValue : Int!
+    
     //ステージが入ってる配列
     var stageArray = [Any]()
     
@@ -31,9 +33,10 @@ class GameViewController01: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //選択したステージの問題、ボタン、答え
-        stageArray.append(["問題","選択肢1","選択肢2","選択肢3",2])
-        stageArray.append(["問題","選択肢1","選択肢2","選択肢3",2])
+        stageArray.append(["正しいのはどれ","1","2","3",2])
+        stageArray.append(["r:10 g:10 b:10はどれ","1","2","3",2])
         stageArray.append(["問題","選択肢1","選択肢2","選択肢3",2])
         
         //タイマー動かす
@@ -46,7 +49,11 @@ class GameViewController01: UIViewController {
             )
         }
         
+        if outputValue == 1 {
+            
+        }
         //セレクト画面で選択したステージを読んでくる
+        stageArray = Any(outputValue)
         
         //タイマー起動
         timecount()
