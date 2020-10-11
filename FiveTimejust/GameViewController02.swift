@@ -1,20 +1,14 @@
 //
-//  GameViewController01.swift
+//  GameViewController02.swift
 //  FiveTimejust
 //
-//  Created by チップまん on 2020/10/04.
+//  Created by チップまん on 2020/10/11.
 //  Copyright © 2020 com.litech. All rights reserved.
 //
 
 import UIKit
 
-class GameViewController01: UIViewController {
-    
-    //ユーザーデフォルトにアクセス
-    let saveData: UserDefaults = UserDefaults.standard
-   
-    //星の数
-    var starcount01: Int = 0
+class GameViewController02: UIViewController {
     
     var quizArray = [Any]()
     
@@ -99,25 +93,11 @@ class GameViewController01: UIViewController {
          let tmpArray = quizArray[0] as! [Any]
         
         //答えが合えば結果へ遷移、タイマー止める
-        if tmpArray[4] as! Int == sender.tag && timer.isValid && count == 5.00 {
-            timer.invalidate()
-            starcount01 = starcount01 + 3
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
+        if tmpArray[4] as! Int == sender.tag && timer.isValid {
             performSegueToResult()
-        }else if tmpArray[4] as! Int == sender.tag && timer.isValid && count >= 4.75 && count <= 5.25 {
             timer.invalidate()
-            starcount01 = starcount01 + 2
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
-            performSegueToResult()
-        }else if tmpArray[4] as! Int == sender.tag && timer.isValid && count >= 4.50 && count <= 5.50 {
-            timer.invalidate()
-            starcount01 = starcount01 + 1
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
-            performSegueToResult()
-        }else {
-            timer.invalidate()
-            performSegueToResult()
         }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -140,4 +120,3 @@ class GameViewController01: UIViewController {
     }
     */
 }
-

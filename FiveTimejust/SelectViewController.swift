@@ -10,12 +10,12 @@ import UIKit
 
 class SelectViewController: UIViewController {
     
-    var inputField: Int!
-    
     //ユーザーデフォルトにアクセス
-    let saveData: UserDefaults = UserDefaults.standard
+    var saveData: UserDefaults = UserDefaults.standard
     
-    var starcount = 0
+    var starcount01:Int = 0
+    var starcount02:Int = 0
+    var starcount03:Int = 0
     
     @IBOutlet var stage1Label: UILabel!
     @IBOutlet var stage2Label: UILabel!
@@ -23,51 +23,52 @@ class SelectViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        starcount = saveData.integer(forKey: "starcount")
+        starcount01 = UserDefaults.standard.integer(forKey: "starcount01")
+        starcount02 = saveData.integer(forKey: "starcount02")
+        starcount03 = saveData.integer(forKey: "starcount03")
 
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        // segueのIDを確認して特定のsegueのときのみ動作させる
-        if segue.identifier == "toGameView" {
-            // 2. 遷移先のViewControllerを取得
-            let next = segue.destination as? GameViewController01
-            // 3. １で用意した遷移先の変数に値を渡す
-            next?.outputValue = self.inputField
-        }
-    }
     
     @IBAction func stageselect01(){
-
-           performSegue(withIdentifier: "toGameView", sender: nil)
-           inputField = 1;
+           performSegue(withIdentifier: "toGameView01", sender: nil)
     }
     
     @IBAction func stageselect02(){
         //星の数が一つ以上あれば遷移、なければアラート
-        if starcount >= 1 {
-           performSegue(withIdentifier: "toGameView", sender: nil)
+        if starcount01 >= 1 {
+           performSegue(withIdentifier: "toGameView02", sender: nil)
         }else {
             let alert: UIAlertController = UIAlertController(title:"進めません",message:"前のステージをクリアしていません。",preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert,animated: true, completion: nil)
-            inputField = 2;
         }
     }
     
     @IBAction func stageselect03(){
         //星の数が一つ以上あれば遷移、なければアラート
-        if starcount >= 1 {
+        if starcount02 >= 1 {
            performSegue(withIdentifier: "toGameView", sender: nil)
         }else {
             let alert: UIAlertController = UIAlertController(title:"進めません",message:"前のステージをクリアしていません。",preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert,animated: true, completion: nil)
-            inputField = 3;
         }
+    }
+    
+    @IBAction func deleteDataFromUserDefaults() {
+        //削除処理
+        UserDefaults.standard.removeObject(forKey: "starcount01")
+        UserDefaults.standard.removeObject(forKey: "starcount02")
+        UserDefaults.standard.removeObject(forKey: "starcount03")
+     
+    }
+    
+    @IBAction func back() {
+        self.presentingViewController?.presentingViewController?
+            .dismiss(animated: true, completion: nil)
+
     }
 
     /*

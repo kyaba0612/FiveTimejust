@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A058DACA252AD96B0035098A /* outline_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A058DAC8252AD96B0035098A /* outline_star.png */; };
 		A058DACB252AD96B0035098A /* color_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A058DAC9252AD96B0035098A /* color_star.png */; };
+		A067BB9325333EEA00785841 /* GameViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067BB9225333EEA00785841 /* GameViewController02.swift */; };
 		A0C97F86252A0B94003B9EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F85252A0B94003B9EE0 /* AppDelegate.swift */; };
 		A0C97F88252A0B94003B9EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F87252A0B94003B9EE0 /* SceneDelegate.swift */; };
 		A0C97F8A252A0B94003B9EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F89252A0B94003B9EE0 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		A058DAC8252AD96B0035098A /* outline_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_star.png; sourceTree = "<group>"; };
 		A058DAC9252AD96B0035098A /* color_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_star.png; sourceTree = "<group>"; };
+		A067BB9225333EEA00785841 /* GameViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController02.swift; sourceTree = "<group>"; };
 		A0C97F82252A0B94003B9EE0 /* FiveTimejust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveTimejust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C97F85252A0B94003B9EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C97F87252A0B94003B9EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				A0C97F9F252A11EC003B9EE0 /* ResultViewController.swift */,
 				A0C97F99252A0FCE003B9EE0 /* SelectViewController.swift */,
 				A0C97F9D252A1199003B9EE0 /* GameViewController01.swift */,
+				A067BB9225333EEA00785841 /* GameViewController02.swift */,
 				A0C97F8E252A0B97003B9EE0 /* Assets.xcassets */,
 				A0C97F90252A0B97003B9EE0 /* LaunchScreen.storyboard */,
 				A0C97F93252A0B97003B9EE0 /* Info.plist */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C97F9A252A0FCE003B9EE0 /* SelectViewController.swift in Sources */,
+				A067BB9325333EEA00785841 /* GameViewController02.swift in Sources */,
 				A0C97F8A252A0B94003B9EE0 /* ViewController.swift in Sources */,
 				A0C97F9E252A1199003B9EE0 /* GameViewController01.swift in Sources */,
 				A0C97F86252A0B94003B9EE0 /* AppDelegate.swift in Sources */,

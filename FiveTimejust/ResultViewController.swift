@@ -12,12 +12,6 @@ class ResultViewController: UIViewController {
     
     var timer: Float = 0.0
     
-    //星の数
-    var starcount: Int = 0
-    
-    //ユーザーデフォルトにアクセス
-    let saveData: UserDefaults = UserDefaults.standard
-    
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var starImage1: UIImageView!
     @IBOutlet var starImage2: UIImageView!
@@ -32,17 +26,14 @@ class ResultViewController: UIViewController {
             starImage1.image = UIImage(named: "color_star.png")
             starImage2.image = UIImage(named: "color_star.png")
             starImage3.image = UIImage(named: "color_star.png")
-            starcount = starcount + 3
         } else if  timer >= 4.75 && timer <= 5.25 {
             starImage1.image = UIImage(named: "color_star.png")
             starImage2.image = UIImage(named: "color_star.png")
             starImage3.image = UIImage(named: "outline_star.png")
-            starcount = starcount + 2
         } else if  timer >= 4.50 && timer <= 5.50 {
             starImage1.image = UIImage(named: "color_star.png")
             starImage2.image = UIImage(named: "outline_star.png")
             starImage3.image = UIImage(named: "outline_star.png")
-            starcount = starcount + 1
         } else {
             starImage1.image = UIImage(named: "outline_star.png")
             starImage2.image = UIImage(named: "outline_star.png")
@@ -58,8 +49,6 @@ class ResultViewController: UIViewController {
     @IBAction func back() {
         self.presentingViewController?.presentingViewController?
             .dismiss(animated: true, completion: nil)
-        
-        saveData.set(starcount, forKey: "starcount")
 
     }
     
