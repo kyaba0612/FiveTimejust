@@ -11,10 +11,10 @@ import UIKit
 class GameViewController01: UIViewController {
     
     //ユーザーデフォルトにアクセス
-    let saveData: UserDefaults = UserDefaults.standard
+    let saveData = UserDefaults.standard
    
     //星の数
-    var starcount01: Int = 0
+    var star01: Int = 0
     
     var quizArray = [Any]()
     
@@ -36,13 +36,10 @@ class GameViewController01: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        quizArray.append(["問題文1","選択肢1","選択肢2","選択肢3",2])
-        quizArray.append(["問題文2","選択肢1","選択肢2","選択肢3",1])
-        quizArray.append(["問題文3","選択肢1","選択肢2","選択肢3",3])
-        quizArray.append(["問題文4","選択肢1","選択肢2","選択肢3",3])
-        quizArray.append(["問題文5","選択肢1","選択肢2","選択肢3",2])
-        quizArray.append(["問題文6","選択肢1","選択肢2","選択肢3",1])
-              
+        quizArray.append(["このシルエット何？","キリン","犬","ゾウ",1,2])
+        quizArray.append(["このシルエット何？","りんご","バナナ","ぶどう",2,1])
+        quizArray.append(["このシルエット何？","ラグビーボール","シャトル","テニスボール",3,3])
+
         quizArray.shuffle()
               
         choiceQuiz()
@@ -69,6 +66,14 @@ class GameViewController01: UIViewController {
         choiceButton1.setTitle(tmpArray[1] as? String, for: .normal)
         choiceButton2.setTitle(tmpArray[2] as? String, for: .normal)
         choiceButton3.setTitle(tmpArray[3] as? String, for: .normal)
+        
+        if tmpArray[4] as! Int  == 1 {
+            imageLabel.image = UIImage(named: "silhouette01.png")
+        }else if  tmpArray[4] as! Int  == 2 {
+            imageLabel.image = UIImage(named: "silhouette02.png")
+        }else if  tmpArray[4] as! Int  == 3 {
+            imageLabel.image = UIImage(named: "silhouette03.png")
+        }
     }
     
     @objc func timecount() {
@@ -78,12 +83,14 @@ class GameViewController01: UIViewController {
         //タイマーが一定時間立つとリザルト
         if count >= 6.00 {
             performSegueToResult()
+            timer.invalidate()
         }
     }
     
     
     //自動で遷移
     func performSegueToResult() {
+        saveData.set(star01, forKey: "starcount01")
         performSegue(withIdentifier: "toResultView", sender: nil)
     }
     
@@ -91,6 +98,7 @@ class GameViewController01: UIViewController {
        if segue.identifier == "toResultView" {
             let resultViewController = segue.destination as! ResultViewController
             resultViewController.timer = self.count
+        segue.destination.modalPresentationStyle = .fullScreen
         }
     }
     
@@ -99,23 +107,20 @@ class GameViewController01: UIViewController {
          let tmpArray = quizArray[0] as! [Any]
         
         //答えが合えば結果へ遷移、タイマー止める
-        if tmpArray[4] as! Int == sender.tag && timer.isValid && count == 5.00 {
+        if tmpArray[5] as! Int == sender.tag && timer.isValid && count == 5.00 {
             timer.invalidate()
-            starcount01 = starcount01 + 3
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
+            star01 = star01 + 3
             performSegueToResult()
-        }else if tmpArray[4] as! Int == sender.tag && timer.isValid && count >= 4.75 && count <= 5.25 {
+        }else if tmpArray[5] as! Int == sender.tag && timer.isValid && count >= 4.75 && count <= 5.25 {
             timer.invalidate()
-            starcount01 = starcount01 + 2
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
+            star01 = star01 + 2
             performSegueToResult()
-        }else if tmpArray[4] as! Int == sender.tag && timer.isValid && count >= 4.50 && count <= 5.50 {
+        }else if tmpArray[5] as! Int == sender.tag && timer.isValid && count >= 4.50 && count <= 5.50 {
             timer.invalidate()
-            starcount01 = starcount01 + 1
-            UserDefaults.standard.set(starcount01, forKey: "starcount01")
+            star01 = star01 + 1
             performSegueToResult()
-        }else {
-            timer.invalidate()
+        }else if tmpArray[5] as! Int == sender.tag && timer.isValid {
+            //timer.invalidate()
             performSegueToResult()
         }
     }
@@ -123,7 +128,7 @@ class GameViewController01: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
  
     
 

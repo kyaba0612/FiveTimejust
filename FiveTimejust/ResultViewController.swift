@@ -49,9 +49,11 @@ class ResultViewController: UIViewController {
     @IBAction func back() {
         self.presentingViewController?.presentingViewController?
             .dismiss(animated: true, completion: nil)
-
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.modalPresentationStyle = .fullScreen
+    }
 
     /*
     // MARK: - Navigation

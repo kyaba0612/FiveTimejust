@@ -8,13 +8,13 @@
 
 import UIKit
 
-class GameViewController02: UIViewController {
+class GameViewController03: UIViewController {
     
     //ユーザーデフォルトにアクセス
     let saveData = UserDefaults.standard
    
     //星の数
-    var star02: Int = 0
+    var star03: Int = 0
     
     var quizArray = [Any]()
     
@@ -36,12 +36,12 @@ class GameViewController02: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        quizArray.append(["R:255,G:0,,B:0はどれ？","①","②","③",1,1])
-        quizArray.append(["R:241,G:0,B:141,はどれ？","①","②","③",2,3])
-        quizArray.append(["R:61,G:61,B:61,はどれ？","①","②","③",3,2])
+        quizArray.append(["この地名はどれ？","千葉県","愛媛県","熊本県",1,1])
+        quizArray.append(["この地名はどれ？","ハワイ","イタリア","グアム",2,3])
+        quizArray.append(["この地名はどれ？","ドイツ","大阪市","スロベニア",3,2])
 
         quizArray.shuffle()
-              
+
         choiceQuiz()
 
         //タイマー動かす
@@ -68,11 +68,11 @@ class GameViewController02: UIViewController {
         choiceButton3.setTitle(tmpArray[3] as? String, for: .normal)
         
         if tmpArray[4] as! Int  == 1 {
-            imageLabel.image = UIImage(named: "color01.png")
+            imageLabel.image = UIImage(named: "map01.png")
         }else if  tmpArray[4] as! Int  == 2 {
-            imageLabel.image = UIImage(named: "color02.png")
+            imageLabel.image = UIImage(named: "map02.png")
         }else if  tmpArray[4] as! Int  == 3 {
-            imageLabel.image = UIImage(named: "color03.png")
+            imageLabel.image = UIImage(named: "map03.png")
         }
     }
     
@@ -90,7 +90,7 @@ class GameViewController02: UIViewController {
     
     //自動で遷移
     func performSegueToResult() {
-        saveData.set(star02, forKey: "starcount02")
+        saveData.set(star03, forKey: "starcount03")
         performSegue(withIdentifier: "toResultView", sender: nil)
     }
     
@@ -109,15 +109,15 @@ class GameViewController02: UIViewController {
         //答えが合えば結果へ遷移、タイマー止める
         if tmpArray[5] as! Int == sender.tag && timer.isValid && count == 5.00 {
             timer.invalidate()
-            star02 = star02 + 3
+            star03 = star03 + 3
             performSegueToResult()
         }else if tmpArray[5] as! Int == sender.tag && timer.isValid && count >= 4.75 && count <= 5.25 {
             timer.invalidate()
-            star02 = star02 + 2
+            star03 = star03 + 2
             performSegueToResult()
         }else if tmpArray[5] as! Int == sender.tag && timer.isValid && count >= 4.50 && count <= 5.50 {
             timer.invalidate()
-            star02 = star02 + 1
+            star03 = star03 + 1
             performSegueToResult()
         }else if tmpArray[5] as! Int == sender.tag && timer.isValid {
             timer.invalidate()

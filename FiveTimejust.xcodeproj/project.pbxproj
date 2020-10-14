@@ -7,9 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A058DACA252AD96B0035098A /* outline_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A058DAC8252AD96B0035098A /* outline_star.png */; };
-		A058DACB252AD96B0035098A /* color_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A058DAC9252AD96B0035098A /* color_star.png */; };
-		A067BB9325333EEA00785841 /* GameViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067BB9225333EEA00785841 /* GameViewController02.swift */; };
+		A05748882534995D00FE2845 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A057487D2534995D00FE2845 /* title.png */; };
+		A05748892534995D00FE2845 /* outline_star_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = A057487E2534995D00FE2845 /* outline_star_mini.png */; };
+		A057488A2534995D00FE2845 /* outline_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A057487F2534995D00FE2845 /* outline_star.png */; };
+		A057488B2534995D00FE2845 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748802534995D00FE2845 /* reset.png */; };
+		A057488C2534995D00FE2845 /* stage01.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748812534995D00FE2845 /* stage01.png */; };
+		A057488D2534995D00FE2845 /* stage02.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748822534995D00FE2845 /* stage02.png */; };
+		A057488E2534995D00FE2845 /* color_star.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748832534995D00FE2845 /* color_star.png */; };
+		A057488F2534995D00FE2845 /* stage03.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748842534995D00FE2845 /* stage03.png */; };
+		A05748902534995D00FE2845 /* color_star_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748852534995D00FE2845 /* color_star_mini.png */; };
+		A05748912534995D00FE2845 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748862534995D00FE2845 /* back.png */; };
+		A05748922534995D00FE2845 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748872534995D00FE2845 /* bg.png */; };
+		A0574894253499F900FE2845 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = A0574893253499F900FE2845 /* start.png */; };
+		A057489B2534A03000FE2845 /* stage09.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748952534A03000FE2845 /* stage09.png */; };
+		A057489C2534A03000FE2845 /* stage08.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748962534A03000FE2845 /* stage08.png */; };
+		A057489D2534A03000FE2845 /* stage06.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748972534A03000FE2845 /* stage06.png */; };
+		A057489E2534A03000FE2845 /* stage05.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748982534A03000FE2845 /* stage05.png */; };
+		A057489F2534A03000FE2845 /* stage04.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748992534A03000FE2845 /* stage04.png */; };
+		A05748A02534A03000FE2845 /* stage07.png in Resources */ = {isa = PBXBuildFile; fileRef = A057489A2534A03000FE2845 /* stage07.png */; };
+		A05748A5253558E300FE2845 /* silhouette01.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748A1253558E200FE2845 /* silhouette01.png */; };
+		A05748A6253558E300FE2845 /* silhouette02.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748A2253558E200FE2845 /* silhouette02.png */; };
+		A05748A7253558E300FE2845 /* silhouette03.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748A3253558E200FE2845 /* silhouette03.png */; };
+		A05748A8253558E300FE2845 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A05748A4253558E200FE2845 /* Button.png */; };
+		A05748AA2535895500FE2845 /* GameViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05748A92535895500FE2845 /* GameViewController02.swift */; };
+		A05AFC3B253710F800540A69 /* map01.png in Resources */ = {isa = PBXBuildFile; fileRef = A05AFC38253710F800540A69 /* map01.png */; };
+		A05AFC3C253710F800540A69 /* map02.png in Resources */ = {isa = PBXBuildFile; fileRef = A05AFC39253710F800540A69 /* map02.png */; };
+		A05AFC3D253710F800540A69 /* map03.png in Resources */ = {isa = PBXBuildFile; fileRef = A05AFC3A253710F800540A69 /* map03.png */; };
 		A0C97F86252A0B94003B9EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F85252A0B94003B9EE0 /* AppDelegate.swift */; };
 		A0C97F88252A0B94003B9EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F87252A0B94003B9EE0 /* SceneDelegate.swift */; };
 		A0C97F8A252A0B94003B9EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F89252A0B94003B9EE0 /* ViewController.swift */; };
@@ -19,12 +42,39 @@
 		A0C97F9A252A0FCE003B9EE0 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F99252A0FCE003B9EE0 /* SelectViewController.swift */; };
 		A0C97F9E252A1199003B9EE0 /* GameViewController01.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F9D252A1199003B9EE0 /* GameViewController01.swift */; };
 		A0C97FA0252A11EC003B9EE0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C97F9F252A11EC003B9EE0 /* ResultViewController.swift */; };
+		A0DD58E82536910D003E1F08 /* color03.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DD58E52536910D003E1F08 /* color03.png */; };
+		A0DD58E92536910D003E1F08 /* color02.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DD58E62536910D003E1F08 /* color02.png */; };
+		A0DD58EA2536910D003E1F08 /* color01.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DD58E72536910D003E1F08 /* color01.png */; };
+		A0DD58EC2536962F003E1F08 /* GameViewController03.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD58EB2536962F003E1F08 /* GameViewController03.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A058DAC8252AD96B0035098A /* outline_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_star.png; sourceTree = "<group>"; };
-		A058DAC9252AD96B0035098A /* color_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_star.png; sourceTree = "<group>"; };
-		A067BB9225333EEA00785841 /* GameViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController02.swift; sourceTree = "<group>"; };
+		A057487D2534995D00FE2845 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A057487E2534995D00FE2845 /* outline_star_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_star_mini.png; sourceTree = "<group>"; };
+		A057487F2534995D00FE2845 /* outline_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline_star.png; sourceTree = "<group>"; };
+		A05748802534995D00FE2845 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		A05748812534995D00FE2845 /* stage01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage01.png; sourceTree = "<group>"; };
+		A05748822534995D00FE2845 /* stage02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage02.png; sourceTree = "<group>"; };
+		A05748832534995D00FE2845 /* color_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_star.png; sourceTree = "<group>"; };
+		A05748842534995D00FE2845 /* stage03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage03.png; sourceTree = "<group>"; };
+		A05748852534995D00FE2845 /* color_star_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_star_mini.png; sourceTree = "<group>"; };
+		A05748862534995D00FE2845 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		A05748872534995D00FE2845 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		A0574893253499F900FE2845 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		A05748952534A03000FE2845 /* stage09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage09.png; sourceTree = "<group>"; };
+		A05748962534A03000FE2845 /* stage08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage08.png; sourceTree = "<group>"; };
+		A05748972534A03000FE2845 /* stage06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage06.png; sourceTree = "<group>"; };
+		A05748982534A03000FE2845 /* stage05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage05.png; sourceTree = "<group>"; };
+		A05748992534A03000FE2845 /* stage04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage04.png; sourceTree = "<group>"; };
+		A057489A2534A03000FE2845 /* stage07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stage07.png; sourceTree = "<group>"; };
+		A05748A1253558E200FE2845 /* silhouette01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silhouette01.png; sourceTree = "<group>"; };
+		A05748A2253558E200FE2845 /* silhouette02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silhouette02.png; sourceTree = "<group>"; };
+		A05748A3253558E200FE2845 /* silhouette03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silhouette03.png; sourceTree = "<group>"; };
+		A05748A4253558E200FE2845 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		A05748A92535895500FE2845 /* GameViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController02.swift; sourceTree = "<group>"; };
+		A05AFC38253710F800540A69 /* map01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map01.png; sourceTree = "<group>"; };
+		A05AFC39253710F800540A69 /* map02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map02.png; sourceTree = "<group>"; };
+		A05AFC3A253710F800540A69 /* map03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map03.png; sourceTree = "<group>"; };
 		A0C97F82252A0B94003B9EE0 /* FiveTimejust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveTimejust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C97F85252A0B94003B9EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C97F87252A0B94003B9EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +86,10 @@
 		A0C97F99252A0FCE003B9EE0 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		A0C97F9D252A1199003B9EE0 /* GameViewController01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController01.swift; sourceTree = "<group>"; };
 		A0C97F9F252A11EC003B9EE0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A0DD58E52536910D003E1F08 /* color03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color03.png; sourceTree = "<group>"; };
+		A0DD58E62536910D003E1F08 /* color02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color02.png; sourceTree = "<group>"; };
+		A0DD58E72536910D003E1F08 /* color01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color01.png; sourceTree = "<group>"; };
+		A0DD58EB2536962F003E1F08 /* GameViewController03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController03.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,22 +103,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A058DAC6252AD96B0035098A /* img */ = {
+		A057487C2534995D00FE2845 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				A058DAC7252AD96B0035098A /* star */,
+				A05AFC38253710F800540A69 /* map01.png */,
+				A05AFC39253710F800540A69 /* map02.png */,
+				A05AFC3A253710F800540A69 /* map03.png */,
+				A0DD58E72536910D003E1F08 /* color01.png */,
+				A0DD58E62536910D003E1F08 /* color02.png */,
+				A0DD58E52536910D003E1F08 /* color03.png */,
+				A05748A4253558E200FE2845 /* Button.png */,
+				A05748A1253558E200FE2845 /* silhouette01.png */,
+				A05748A2253558E200FE2845 /* silhouette02.png */,
+				A05748A3253558E200FE2845 /* silhouette03.png */,
+				A05748992534A03000FE2845 /* stage04.png */,
+				A05748982534A03000FE2845 /* stage05.png */,
+				A05748972534A03000FE2845 /* stage06.png */,
+				A057489A2534A03000FE2845 /* stage07.png */,
+				A05748962534A03000FE2845 /* stage08.png */,
+				A05748952534A03000FE2845 /* stage09.png */,
+				A0574893253499F900FE2845 /* start.png */,
+				A057487D2534995D00FE2845 /* title.png */,
+				A057487E2534995D00FE2845 /* outline_star_mini.png */,
+				A057487F2534995D00FE2845 /* outline_star.png */,
+				A05748802534995D00FE2845 /* reset.png */,
+				A05748812534995D00FE2845 /* stage01.png */,
+				A05748822534995D00FE2845 /* stage02.png */,
+				A05748832534995D00FE2845 /* color_star.png */,
+				A05748842534995D00FE2845 /* stage03.png */,
+				A05748852534995D00FE2845 /* color_star_mini.png */,
+				A05748862534995D00FE2845 /* back.png */,
+				A05748872534995D00FE2845 /* bg.png */,
 			);
 			path = img;
 			sourceTree = SOURCE_ROOT;
-		};
-		A058DAC7252AD96B0035098A /* star */ = {
-			isa = PBXGroup;
-			children = (
-				A058DAC8252AD96B0035098A /* outline_star.png */,
-				A058DAC9252AD96B0035098A /* color_star.png */,
-			);
-			path = star;
-			sourceTree = "<group>";
 		};
 		A0C97F79252A0B94003B9EE0 = {
 			isa = PBXGroup;
@@ -85,7 +157,7 @@
 		A0C97F84252A0B94003B9EE0 /* FiveTimejust */ = {
 			isa = PBXGroup;
 			children = (
-				A058DAC6252AD96B0035098A /* img */,
+				A057487C2534995D00FE2845 /* img */,
 				A0C97F85252A0B94003B9EE0 /* AppDelegate.swift */,
 				A0C97F87252A0B94003B9EE0 /* SceneDelegate.swift */,
 				A0C97F89252A0B94003B9EE0 /* ViewController.swift */,
@@ -93,7 +165,8 @@
 				A0C97F9F252A11EC003B9EE0 /* ResultViewController.swift */,
 				A0C97F99252A0FCE003B9EE0 /* SelectViewController.swift */,
 				A0C97F9D252A1199003B9EE0 /* GameViewController01.swift */,
-				A067BB9225333EEA00785841 /* GameViewController02.swift */,
+				A05748A92535895500FE2845 /* GameViewController02.swift */,
+				A0DD58EB2536962F003E1F08 /* GameViewController03.swift */,
 				A0C97F8E252A0B97003B9EE0 /* Assets.xcassets */,
 				A0C97F90252A0B97003B9EE0 /* LaunchScreen.storyboard */,
 				A0C97F93252A0B97003B9EE0 /* Info.plist */,
@@ -159,10 +232,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A058DACA252AD96B0035098A /* outline_star.png in Resources */,
-				A058DACB252AD96B0035098A /* color_star.png in Resources */,
+				A05748A8253558E300FE2845 /* Button.png in Resources */,
+				A057488B2534995D00FE2845 /* reset.png in Resources */,
+				A05748A02534A03000FE2845 /* stage07.png in Resources */,
+				A0DD58E92536910D003E1F08 /* color02.png in Resources */,
+				A057488E2534995D00FE2845 /* color_star.png in Resources */,
+				A057489E2534A03000FE2845 /* stage05.png in Resources */,
 				A0C97F92252A0B97003B9EE0 /* LaunchScreen.storyboard in Resources */,
+				A05748892534995D00FE2845 /* outline_star_mini.png in Resources */,
+				A057489D2534A03000FE2845 /* stage06.png in Resources */,
+				A057489F2534A03000FE2845 /* stage04.png in Resources */,
+				A0DD58EA2536910D003E1F08 /* color01.png in Resources */,
+				A05748922534995D00FE2845 /* bg.png in Resources */,
+				A057488C2534995D00FE2845 /* stage01.png in Resources */,
+				A05748A5253558E300FE2845 /* silhouette01.png in Resources */,
 				A0C97F8F252A0B97003B9EE0 /* Assets.xcassets in Resources */,
+				A05748A7253558E300FE2845 /* silhouette03.png in Resources */,
+				A0DD58E82536910D003E1F08 /* color03.png in Resources */,
+				A0574894253499F900FE2845 /* start.png in Resources */,
+				A05748912534995D00FE2845 /* back.png in Resources */,
+				A05AFC3B253710F800540A69 /* map01.png in Resources */,
+				A05748902534995D00FE2845 /* color_star_mini.png in Resources */,
+				A05748882534995D00FE2845 /* title.png in Resources */,
+				A057489B2534A03000FE2845 /* stage09.png in Resources */,
+				A05AFC3D253710F800540A69 /* map03.png in Resources */,
+				A05748A6253558E300FE2845 /* silhouette02.png in Resources */,
+				A05AFC3C253710F800540A69 /* map02.png in Resources */,
+				A057489C2534A03000FE2845 /* stage08.png in Resources */,
+				A057488A2534995D00FE2845 /* outline_star.png in Resources */,
+				A057488D2534995D00FE2845 /* stage02.png in Resources */,
+				A057488F2534995D00FE2845 /* stage03.png in Resources */,
 				A0C97F8D252A0B94003B9EE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C97F9A252A0FCE003B9EE0 /* SelectViewController.swift in Sources */,
-				A067BB9325333EEA00785841 /* GameViewController02.swift in Sources */,
+				A0DD58EC2536962F003E1F08 /* GameViewController03.swift in Sources */,
+				A05748AA2535895500FE2845 /* GameViewController02.swift in Sources */,
 				A0C97F8A252A0B94003B9EE0 /* ViewController.swift in Sources */,
 				A0C97F9E252A1199003B9EE0 /* GameViewController01.swift in Sources */,
 				A0C97F86252A0B94003B9EE0 /* AppDelegate.swift in Sources */,
